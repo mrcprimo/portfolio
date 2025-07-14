@@ -249,7 +249,7 @@ button:hover {
     flex-direction: column;
   }
   .last .primary-last {
-    font-size: 4em;
+    font-size: 3em;
   }
   .acad {
     display: flex;
@@ -257,7 +257,7 @@ button:hover {
     gap: 5em;
   }
   .overlay .description {
-    font-size: 10px;
+    font-size: 8px;
     line-height: normal;
   }
   button {
