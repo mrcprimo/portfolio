@@ -9,19 +9,17 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Slackey&display=swap"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
     />
     <link rel="icon" href="asset/MA.png" type="image/png" />
     <meta
@@ -57,20 +55,34 @@
             </div>
           </div>
         </div>
-        <div data-reveal class="grid-design">
-          <span class="primary">D</span><span class="primary">E</span
-          ><span class="primary">V</span><span class="primary">E</span>
-          <span class="primary">L</span><span class="primary">O</span
-          ><span class="primary">P</span><span class="primary">E</span>
-          <span class="primary">R</span>
+        <div data-reveal class="grid-design stroke">
+          <span class="primary stroke">D</span
+          ><span class="primary stroke">E</span
+          ><span class="primary stroke">V</span
+          ><span class="primary stroke">E</span>
+          <span class="primary stroke">L</span
+          ><span class="primary stroke">O</span
+          ><span class="primary stroke">P</span
+          ><span class="primary stroke">E</span>
+          <span class="primary stroke">R</span>
         </div>
         <div>
           <div class="statement-divs">
             <div data-reveal style="border-bottom: 1px solid #fafafa">
               <p>Deploy the Resume — See the Stack, the Skills, the Journey.</p>
               <br />
-              <button>Download resume</button>
+              <button id="download-resume">
+                Download resume&nbsp;<i class="fa-solid fa-file-arrow-down"></i>
+              </button>
             </div>
+            <script>
+              $("#download-resume").on("click", () => {
+                const link = document.createElement("a");
+                link.href = "asset/CV/CV.pdf";
+                link.download = "Marc_Primo_CV.pdf"; // Optional custom file name
+                link.click();
+              });
+            </script>
             <div data-reveal>
               <p>
                 Laid-back logic, sharp solutions — applying a steady and
@@ -90,16 +102,14 @@
         <div class="detail-title grid-design">
           <span class="primary">L</span><span class="primary">E</span
           ><span class="primary">A</span><span class="primary">R</span
-          ><span class="primary">N</span>
-          <span class="primary">&nbsp;</span>
-          <span class="primary">M</span><span class="primary">O</span
-          ><span class="primary">R</span><span class="primary">E</span>
-          <span class="primary">&nbsp;</span>
-          <span class="primary">A</span><span class="primary">B</span
-          ><span class="primary">O</span><span class="primary">U</span
-          ><span class="primary">T</span>
-          <span class="primary">&nbsp;</span>
-          <span class="primary">M</span><span class="primary">E</span>
+          ><span class="primary">N</span> <span class="primary stroke">M</span
+          ><span class="primary stroke">O</span
+          ><span class="primary stroke">R</span
+          ><span class="primary stroke">E</span> <span class="primary">A</span
+          ><span class="primary">B</span><span class="primary">O</span
+          ><span class="primary">U</span><span class="primary">T</span>
+          <span class="primary stroke">M</span
+          ><span class="primary stroke">E</span>
         </div>
         <div style="display: flex; align-items: center">
           <h2 style="margin: 0">stdout</h2>
@@ -181,9 +191,17 @@
           </h2>
           <ul>
             <li>BSIT Cum Laude</li>
-            <li id="aws"><u style="border-bottom: 1px solid var(--accent-color);">AWS Academy Graduate - Dec 18, 2024</u></li>
+            <li id="aws">
+              <u style="border-bottom: 1px solid var(--accent-color)"
+                >AWS Academy Graduate - Dec 18, 2024</u
+              >
+            </li>
             <li>TOPCIT - Advance beginner - April 23, 2024</li>
-            <li id="peenam"><u style="border-bottom: 1px solid var(--accent-color);">PeeNam - Dec 7, 2023</u></li>
+            <li id="peenam">
+              <u style="border-bottom: 1px solid var(--accent-color)"
+                >PeeNam - Dec 7, 2023</u
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -216,7 +234,8 @@
               >&nbsp;primomarcangelo@gmail.com
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/marc-angelo-primo-a97a592a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              <a
+                href="https://www.linkedin.com/in/marc-angelo-primo-a97a592a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 ><i class="fa-brands fa-linkedin"></i>&nbsp;@Marc Angelo
                 Primo</a
               >
@@ -237,7 +256,8 @@
               >
             </li>
             <li>
-              <a href="https://www.instagram.com/__suprimo___?igsh=MXM2ZWE2c2RxYW1uYQ=="
+              <a
+                href="https://www.instagram.com/__suprimo___?igsh=MXM2ZWE2c2RxYW1uYQ=="
                 ><i class="fa-brands fa-instagram"></i>&nbsp;@__suprimo___</a
               >
             </li>
@@ -247,13 +267,16 @@
     </div>
     <div class="project">
       <div class="lexend-deca hero-divs grid-design" data-reveal>
-        <span class="primary">R</span><span class="primary">E</span
-        ><span class="primary">C</span><span class="primary">E</span>
-        <span class="primary">N</span><span class="primary">T</span
-        ><span class="primary">P</span><span class="primary">R</span
-        ><span class="primary">O</span><span class="primary">J</span
-        ><span class="primary">E</span><span class="primary">C</span>
-        <span class="primary">T</span><span class="primary">S</span>
+        <span class="primary stroke">R</span
+        ><span class="primary stroke">E</span>
+        <span class="primary stroke">C</span
+        ><span class="primary stroke">E</span>
+        <span class="primary stroke">N</span
+        ><span class="primary stroke">T</span> <span class="primary">P</span
+        ><span class="primary">R</span> <span class="primary">O</span
+        ><span class="primary">J</span> <span class="primary">E</span
+        ><span class="primary">C</span> <span class="primary">T</span
+        ><span class="primary">S</span>
       </div>
       <div class="gallery">
         <div class="gallery-item" data-reveal>
@@ -287,7 +310,10 @@
           </div>
         </div>
         <div class="gallery-item" data-reveal>
-          <img src="asset/projects/mock-exam.png" alt="CLSU Mock examination system" />
+          <img
+            src="asset/projects/mock-exam.png"
+            alt="CLSU Mock examination system"
+          />
           <div class="overlay">
             <h3>CLSU Mock Examination System</h3>
             <p class="date">October 2024 - January 2025</p>
@@ -300,7 +326,10 @@
           </div>
         </div>
         <div class="gallery-item" data-reveal>
-          <img src="asset/projects/peenam.png" alt="PeeNam iphone and samsung" />
+          <img
+            src="asset/projects/peenam.png"
+            alt="PeeNam iphone and samsung"
+          />
           <div class="overlay">
             <h3>PeeNam E-commerce system</h3>
             <p class="date">October 27, 2023 - December 7, 2023</p>
@@ -346,15 +375,13 @@
         style="display: flex; flex-direction: column; justify-content: flex-end"
       >
         <p style="padding-bottom: 1em">
-          Let’s keep building what’s next. Every solution we craft, every
-          challenge we solve, brings us one step closer to something smarter,
-          faster, and more meaningful.
+          It’s not just writing code. It’s moving things forward — through code.
         </p>
       </div>
     </div>
     <footer class="site-footer">
       <div
-        style="display: flex; justify-content: center"
+        style="display: flex; justify-content: center; text-align: center"
         class="footer-content"
       >
         <p>&copy; 2025 Marc Angelo G. Primo. All rights reserved.</p>
