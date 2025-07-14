@@ -120,9 +120,11 @@ p {
   padding: 5px;
   border-radius: 5px;
 }
+
 .skills div {
   padding: 5px;
 }
+
 button {
   padding: 5px 10px;
   border: 2px solid var(--accent-color);
@@ -217,6 +219,15 @@ button:hover {
 .gallery-item:hover .overlay {
   opacity: 1;
 }
+
+.experiences li{
+  display: flex;
+  justify-content: space-between;
+}
+.experiences li div:nth-child(2){
+  color: gray;
+}
+
 @media (max-width: 768px) {
   .hero {
     display: grid;
@@ -270,6 +281,9 @@ button:hover {
   .skills,
   .acad {
     gap: 2em;
+  }
+  .four-cont{
+    font-size: .7em;
   }
 }
 span:hover {
