@@ -220,11 +220,11 @@ button:hover {
   opacity: 1;
 }
 
-.experiences li{
+.experiences ul li{
   display: flex;
   justify-content: space-between;
 }
-.experiences li div:nth-child(2){
+.experiences ul li div:nth-child(2){
   color: gray;
 }
 
