@@ -171,6 +171,35 @@ button:hover {
   transition: transform 0.3s ease;
 }
 
+.gallery-spes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 280px; /* or any fixed height you prefer */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s ease-in-out;
+  display: block;
+}
+
+.spes-details{
+  border: 2px solid var(--accent-color);
+  height: 100%;
+  padding: 12px;
+}
+
+
 .gallery-item img {
   width: 100%;
   height: auto;
@@ -251,7 +280,8 @@ button:hover {
   }
   .about,
   .statement-divs,
-  .gallery {
+  .gallery,
+  .gallery-spes{
     display: grid;
     grid-template-columns: auto;
   }
